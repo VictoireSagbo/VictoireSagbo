@@ -28,7 +28,7 @@ for  (i in 1:N){
 }
 
 x=tail(x,1000)
-
+y=head(x, 1000)
 ts.plot(x,col="blue")
 ```
 ```{r}
