@@ -1,0 +1,56 @@
+---
+title: "Processus Stationnaire"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+SIMULATION DE D' UN PROCESSUS STATIONNAIRE $(X_t)_t  $ :
+
+ i.e dont on a les conditions sont les suivantes:
+
+1-$E(X_t) < \infty  $,  
+2-$ Var(X_t) < \infty ,  $ et  
+3-$ covar(Z_t, Z_k) =0  $ et $ a+b \leq 1 $ )
+```{r}
+```
+
+
+```{r}
+mu=0.25
+a=0.65
+b=0.25
+x=c()
+x[1]=0
+N=1100
+for  (i in 1:N){
+  x[i+1]=mu + a*x[i] + b*rnorm(1)
+}
+
+x=tail(x,1000)
+
+ts.plot(x,col="blue")
+```
+```{r}
+X=head(x, length(x)-1)
+Y=tail(x, length(x)-1)
+
+df=data.frame(X,Y)
+
+plot(Y~X, df)
+# creation du modele lineaire
+
+reglin=lm(Y~X)
+
+summary(reglin)
+
+
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
