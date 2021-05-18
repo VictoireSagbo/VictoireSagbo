@@ -2,5 +2,6 @@
 
 def main():
     """Cheks if there is enough free memory in the computer"""
+    prnt("Everything is ok")
 
 main()
