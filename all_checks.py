@@ -19,6 +19,7 @@ def check_disk_full(disk, min_gb, min_percent):
 
     return False
 
+# Defining the main function
 
 def main():
     if check_reboot():
@@ -31,4 +32,4 @@ def main():
     print("Everything ok.")
     sys.exit(0)
 
-main()    
+main()
