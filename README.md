@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @VictoireSagbo
-- 👀 I’m interested in machine learning, deep learning and reinforcement learning.
-- 🌱 I’m currently learning big data
-- 💞️ I’m looking to collaborate on reinforcement a learning project
+- 👋 Hi, I’m a data scientist/analyst
+- 👀 I’m interested in machine learning, deep learning and reinforcement learning, AI, HTML, CSS, PHP, Java.
+- 🌱 I’m a master holder in big data
+- 💞️ I’m looking for job in data science
 - 📫 How to reach me ...
 
 <!---
